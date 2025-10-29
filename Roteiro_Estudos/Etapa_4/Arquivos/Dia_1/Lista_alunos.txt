@@ -1,2 +1,2 @@
-{'nome': 'Rodrigo Terra Nunes Ribas', 'idade': 20, 'curso': 'Ciencia da computacao'}
-{'nome': 'Vitoria Brito Grangeiro', 'idade': 21, 'curso': 'Psicologia'}
+rodrigo;21;ciencia
+Vitoria;21;psico

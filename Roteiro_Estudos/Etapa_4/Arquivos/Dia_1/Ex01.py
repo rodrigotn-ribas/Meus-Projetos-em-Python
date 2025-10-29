@@ -1,11 +1,16 @@
 alunos = []  # lista vazia
-
+resultado = " | ".join(alunos)
 def escrever():
-    for item in alunos:
-        arquivo.write(f"{item}\n")
+    for a in alunos:
+        # cria uma lista com os valores convertidos em texto
+        dados = [a["nome"], str(a["idade"]), a["curso"]]
+        linha = ";".join(dados)  # junta tudo com ponto e vírgula
+        arquivo.write(linha + "\n")  # grava e pula linha
 
 def ler():
-    print(arquivo.read())
+    for linha in arquivo:
+        nome, idade, curso = linha.strip().split(";")
+        print(f"Nome: {nome} | Idade: {idade} | Curso: {curso}")
 
     
 
@@ -35,3 +40,14 @@ while True:
             break
     
         arquivo.close()
+
+''' 
+    my_list = ["apple", "banana", "cherry"]
+    separator = ", "
+    joined_string = separator.join(my_list)
+    print(joined_string) # Output: apple, banana, cherry
+    
+    file_name = "output.txt"
+    with open(file_name, "w") as file:
+        file.write(joined_string)
+'''

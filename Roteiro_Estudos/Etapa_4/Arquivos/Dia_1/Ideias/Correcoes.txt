@@ -1,0 +1,4 @@
+implementacoes:
+3 - Deixar limpo o codigo e comentar
+5 - melhorar interface
+6 - numerar items na lista

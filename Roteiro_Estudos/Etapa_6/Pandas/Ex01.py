@@ -1,6 +1,6 @@
 import pandas as pd
-tabela_alunos_df = pd.read_csv('Roteiro_Estudos/Etapa_6/dados_aleatorios_nomes_reais.csv')
-tabela_notas_df = pd.read_csv('Roteiro_Estudos/Etapa_6/notas_e_medias.csv')
+tabela_alunos_df = pd.read_csv('Roteiro_Estudos/Etapa_6/Pandas/dados_aleatorios_nomes_reais.csv')
+tabela_notas_df = pd.read_csv('Roteiro_Estudos/Etapa_6/Pandas/notas_e_medias.csv')
 # print(tabela_alunos_df.head()) // mostra as 5 primeiras linhas
 # print(tabela_alunos_df.shape) // mostra qnts linhas e colunas
 # print(tabela_alunos_df.describe()) // mostra as informacoes mais uteis 

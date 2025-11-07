@@ -7,4 +7,4 @@ idade_maior_20 = tabela_final_df.loc[tabela_final_df['idade'] > 20, ["nome", "id
 print(idade_maior_20)
 
 
-print(tabela_final_df)
+print(tabela_final_df) 

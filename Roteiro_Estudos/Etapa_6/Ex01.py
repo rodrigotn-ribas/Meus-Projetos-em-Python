@@ -32,6 +32,5 @@ tabela_final_df = pd.concat([tabela_alunos_df, tabela_notas_df], axis=1) # axis 
 
 # media_curso = tabela_final_df[['curso', 'media']].groupby('curso').mean() // mostra a media de cada curso
 
-nota_max = tabela_final_df.max()
 
-print(nota_max)
+print(tabela_final_df)

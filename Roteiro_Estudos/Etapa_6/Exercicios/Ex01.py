@@ -15,8 +15,6 @@ relatorio = tabela_aluno_df.groupby('curso')['nome'].count().reset_index()
 # cria um arquivo chamado relatorio no formato xlsx
 relatorio.to_excel("Roteiro_Estudos/Etapa_6/Exercicios/relatorio_alunos.xlsx", index=False)
 
-
-
 # =============NUMPY=============
 
 # cria um array com as idades da tabela

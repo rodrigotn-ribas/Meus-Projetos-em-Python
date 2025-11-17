@@ -22,16 +22,16 @@ arquivo = pd.read_csv("Analise_Estatistica/Semana_01/Pandas/tabela_loja.csv")
 
 # ======= Exercicio 1 ======
 
-# preco_produto = arquivo[['Produto', 'Preco_Unitario']]
-# print(preco_produto.loc[10:20])
-# print(arquivo.loc[0:5, ['Produto', 'Preco_Unitario']])
+preco_produto = arquivo[['Produto', 'Preco_Unitario']]
+print(preco_produto.loc[10:20])
+print(arquivo.loc[0:5, ['Produto', 'Preco_Unitario']])
 
 # ======= Exercicio 2 ======
 
-# print(arquivo[arquivo['Quantidade'] > 4])
-# print(arquivo[arquivo['Forma_Pagamento'] == 'PIX'].head())
-# print(arquivo[(arquivo['Categoria'] == 'Vestuário') & (arquivo['Preco_Unitario'] > 39.99)])
-# filtro_intervalo = arquivo[arquivo['Preco_Unitario'].between(10, 50)] // Mostra os valores da coluna Preco_Unitario estando entre 10 e 50
-# print(filtro_intervalo)
+print(arquivo[arquivo['Quantidade'] > 4])
+print(arquivo[arquivo['Forma_Pagamento'] == 'PIX'].head())
+print(arquivo[(arquivo['Categoria'] == 'Vestuário') & (arquivo['Preco_Unitario'] > 39.99)])
+filtro_intervalo = arquivo[arquivo['Preco_Unitario'].between(10, 50)] # // Mostra os valores da coluna Preco_Unitario estando entre 10 e 50
+print(filtro_intervalo)
 
 # ========= Desafio ========

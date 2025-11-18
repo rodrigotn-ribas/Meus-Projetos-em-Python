@@ -29,22 +29,22 @@ arquivo = pd.read_csv("Analise_Estatistica/Semana_01/Pandas/tabela_loja.csv")
 
 # ======= Exercicio 1 ======
 
-print(arquivo.head())
-print(arquivo.tail())
-print(arquivo.dtypes)
-print(arquivo.shape)
-print(arquivo.describe())
-print(arquivo.info())
+# print(arquivo.head())
+# print(arquivo.tail())
+# print(arquivo.dtypes)
+# print(arquivo.shape)
+# print(arquivo.describe())
+# print(arquivo.info())
 
 # ======= Exercicio 2 ======
 
-print(arquivo['Preco_Unitario'].mean())
-print(arquivo['Preco_Unitario'].max())
-print(arquivo['Preco_Unitario'].min())
-print(arquivo['Preco_Unitario'].dtype)
+# print(arquivo['Preco_Unitario'].mean())
+# print(arquivo['Preco_Unitario'].max())
+# print(arquivo['Preco_Unitario'].min())
+# print(arquivo['Preco_Unitario'].dtype)
 
 # ======= Desafio ======
 
-print(arquivo['Categoria'].unique())
-print(arquivo['Produto'].head(10))
+# print(arquivo['Categoria'].unique())
+# print(arquivo['Produto'].head(10))
 

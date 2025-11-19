@@ -25,17 +25,35 @@ arquivo = pd.read_csv('Analise_Estatistica/Semana_01/Pandas/tabela_loja.csv')
 
 print(arquivo.isnull().sum())
 
-# colunas_nulas = arquivo.columns[arquivo.isnull().any()]
-# print(colunas_nulas)
+colunas_nulas = arquivo.columns[arquivo.isnull().any()]
+print(colunas_nulas)
 
-# arquivo.dropna(inplace=True)
-# print(arquivo)
+arquivo.dropna(inplace=True)
+print(arquivo)
 
-# arquivo["Preco_Unitario"] = arquivo["Preco_Unitario"].fillna(arquivo["Preco_Unitario"].mean())
-# print(arquivo)
+arquivo["Preco_Unitario"] = arquivo["Preco_Unitario"].fillna(arquivo["Preco_Unitario"].mean())
+print(arquivo)
 
-# arquivo["Categoria"] = arquivo["Categoria"].fillna('Desconhecido')
-# print(arquivo)
+arquivo["Categoria"] = arquivo["Categoria"].fillna('Desconhecido')
+print(arquivo)
 
 # ======= Exercicio 02 =======
 
+arquivo.rename(columns={"Categoria" : "Cat"}, inplace=True)
+arquivo.rename(columns={"Preco_Unitario" : "Preco"}, inplace=True)
+arquivo.rename(columns={"Quantidade" : "Quant"}, inplace=True)
+print(arquivo)
+
+arquivo.pop('Preco_Unitario')
+print(arquivo)
+
+arquivo['Valor_Total'] = arquivo['Valor_Total'].astype('category')
+print(arquivo)
+
+# ========= Desafio =========
+
+arquivo.drop_duplicates(inplace=True)
+print(arquivo)
+
+arquivo['Desconto_10'] = arquivo['Valor_Total'] - arquivo['Valor_Total'] * 0.1  
+print(arquivo)

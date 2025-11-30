@@ -1,47 +1,48 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# x1 = [1,2,3,4,5,6,7,8,9,10]
-# y1 = x1.copy()
-# for i in range(len(x1)):
-#     if i % 2 == 0:
-#         y1[i] = x1[i]+1
-#     else:
-#         y1[i] = x1[i]-1
+# Plot
+x1 = [1,2,3,4,5,6,7,8,9,10]
+y1 = x1.copy()
+for i in range(len(x1)):
+    if i % 2 == 0:
+        y1[i] = x1[i]+1
+    else:
+        y1[i] = x1[i]-1
 
-# x2 = [1,2,3,4,5,6,7,8,9,10]
-# y2 = x2.copy()
-# for i in range(len(x2)):
-#     if i % 2 == 1:
-#         y2[i] = x2[i]+1
-#     else:
-#         y2[i] = x2[i]-1
+x2 = [1,2,3,4,5,6,7,8,9,10]
+y2 = x2.copy()
+for i in range(len(x2)):
+    if i % 2 == 1:
+        y2[i] = x2[i]+1
+    else:
+        y2[i] = x2[i]-1
 
-# x3 = [1,2,3,4,5,6,7,8,9,10]
-# y3 = x3.copy()
-# for i in range(len(x2)):
-#     if i % 2 == 1:
-#         y3[i] = x3[i]+2
-#     else:
-#         y3[i] = x3[i]-2
+x3 = [1,2,3,4,5,6,7,8,9,10]
+y3 = x3.copy()
+for i in range(len(x2)):
+    if i % 2 == 1:
+        y3[i] = x3[i]+2
+    else:
+        y3[i] = x3[i]-2
 
-# plt.figure(figsize=(10,6))
-# plt.plot(x1, y1,label='par', color='#a80826',marker='^', alpha=1, linestyle='-')
-# plt.plot(x2, y2,label='impar', color="#400fe0",marker='s', alpha=1, linestyle=':')
-# plt.plot(x3, y3,label='gold', color="#e0d20f",marker='o', alpha=1, linestyle='-.')
-# plt.title("plot teste")
-# plt.legend()
-# plt.show()
+plt.figure(figsize=(10,6))
+plt.plot(x1, y1,label='par', color='#a80826',marker='^', alpha=1, linestyle='-')
+plt.plot(x2, y2,label='impar', color="#400fe0",marker='s', alpha=1, linestyle=':')
+plt.plot(x3, y3,label='gold', color="#e0d20f",marker='o', alpha=1, linestyle='-.')
+plt.title("plot teste")
+plt.legend()
+plt.show()
 
 
 # Bar
-# categorias = ["A", "B", "C", "D"]
-# valores = [10, 20, 15, 30]
+categorias = ["A", "B", "C", "D"]
+valores = [10, 20, 15, 30]
 
-# plt.figure(figsize=(8, 6))
-# plt.bar(categorias, valores, color=['#FFD700', '#8A2BE2', (0.2, 0.5, 0.9), '#FA8072'], width=0.6, edgecolor = 'black', linewidth=2)
-# plt.title("Gráfico de Barras")
-# plt.show()
+plt.figure(figsize=(8, 6))
+plt.bar(categorias, valores, color=['#FFD700', '#8A2BE2', (0.2, 0.5, 0.9), '#FA8072'], width=0.6, edgecolor = 'black', linewidth=2)
+plt.title("Gráfico de Barras")
+plt.show()
 
 # ==== Exercicio 1 ====
 '''

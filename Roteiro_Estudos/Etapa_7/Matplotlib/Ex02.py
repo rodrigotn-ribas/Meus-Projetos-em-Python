@@ -5,7 +5,7 @@ import numpy as np
 x = np.random.rand(50)
 y = np.random.rand(50)
 
-plt.scatter(x, y, color='red', s = 50, marker='o', alpha = 0.5)
+plt.scatter(x, y, color='red', s = 50, alpha = 0.5) # s = size
 plt.title("Scatter Básico")
 plt.show()
 
